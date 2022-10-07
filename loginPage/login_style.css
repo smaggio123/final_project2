@@ -1,0 +1,128 @@
+/*Body of the page*/
+body{
+    /*Makes the background color of the page this color*/
+    background-color: rgb(147, 188, 223);
+}
+
+/*Centers the text of the elements in this class*/
+.centerText{
+    text-align: center;
+}
+
+/*Line dividing the title and the main contents of the page*/
+#Title_separator{
+    /*Makes the divider more visible*/
+    border-bottom: 3px solid black;
+    margin-top:3%;
+}
+
+/*Sign in area*/
+.signIn{
+    /*Moves the sign in area more towards the center of the page*/
+    margin-left: 38%;
+    
+}
+
+/*The div containing the login inputs, login button, and email display*/
+#container{
+    height: 500px;
+}
+
+/*Heading of the sign in area*/
+#signInHeading{
+    background-color: white;
+    /*Setting the font of the heading*/
+    font-family: 'Arial','times new roman','comic-sans';
+    /*Makes the font more visible*/
+    font-size: large;
+    /*Centering the text*/
+    text-align: center;
+    position:absolute;
+    top:225px;
+    height:150px;
+    width:350px;
+    /*Moves the heading towards the center of the page*/
+    margin-left: 36%;
+}
+
+/*Div containing the label prompts of the sign in area*/
+#labels{
+    height:40px;
+    width:80px;
+    /*Positioning the label div*/
+    position:absolute;
+    top:300px;
+    /*Setting the font of the labels*/
+    font-family: 'Arial','times new roman','comic-sans';
+    /*Makes the labels more visible*/
+    font-size: medium;
+}
+
+/*Div containing inputs of the sign in area*/
+#inputs{
+    width:175px;
+    height:70px;
+    /*Positioning the inputs*/
+    position:absolute;
+    top:300px;
+    left:100px;
+}
+
+/*sign in button*/
+#submit_btn{
+    /*Positioning the button*/
+    position:relative;
+    top:250px;
+    left:150px;
+    height:20px;
+    width:50px;
+    /*Moving the button towards the center of the page*/
+    margin-left: 36%;
+}
+
+/*Email display*/
+#welcome{
+    /*Positioning the button*/
+    position:relative;
+    top:250px;
+    left:100px;
+    
+    height:200px;
+    width:300px;
+    /*Moving the button towards the center of the page*/
+    margin-left: 36%;
+}
+
+/*Line separating the main content and the links*/
+#bottom_separator{
+    /*Makes the line more visible*/
+    border-bottom: 3px solid black;
+    
+}
+
+/*Div containing links to other pages*/
+#links{
+    height:50px;
+    width:50px;
+    /*Positioning the div*/
+    position:relative;
+    left:150px;
+    /*Moves the links closer to the center of the page*/
+    margin-left: 36%;
+}
+
+a:link{
+    color:blue;
+}
+/*Changes the color when the mouse hovers over the link*/
+a:hover{
+    color:green;
+}
+/*Changes the color when the mouse clicks on the link*/
+a:active{
+    color:orange;
+}
+/*Changes the color after being focused on*/
+a:focus{
+    color: purple;
+}

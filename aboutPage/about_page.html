@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about_style.css">
+</head>
+<body>
+    <div>
+        <!--Displays the company name-->
+        <h1 class="centerText">Company Name</h1>
+    </div>
+    <div>
+        <br>
+        <!--Displays the topic of the page-->
+        <h2 class="centerText">About</h2>
+    </div>
+    <div>
+        <br>
+        <h2 class="centerText">Company Description</h2>
+        <!--displays the mission statement of the company-->
+        <p id="description">It is our mission to get you top quality products from around the globe. With the ongoing pandemic we make it easy for all students to get the things they need from the comfort of their own home. We believe that the time and effort of going out to get groceries and supplies is time and effort that can be spent studying and doing homework.</p>
+    </div>
+    <div>
+        <br>
+        <!--Asks the user for their input-->
+        <h3 class="centerText">How was your experience on our website?</h3>
+        <div id="userInput">
+            <!--Options for their opinion-->
+            <input type="radio" name="sameName">good
+            <input type="radio" name="sameName">bad
+            <button onclick="alert('Thank you for your input')">submit</button>
+        </div>
+    </div>
+    <div>
+        <!--Inserts a pdf with the terms of sevices on it-->
+        <object id="pdfTermsOfServices" data="../pictures/Terms_of_services.pdf"></object>
+        <br>
+        <br>
+        <!--Inserts special email link-->
+        <a id="emailLink" href="mailto:smaggio@albany.edu" target="_blank">Contact us!</a>
+    </div>
+        
+
+    <div>
+        <!--Separates the main content from the links-->
+        <hr class="divider" id="bottom_separator">
+    </div>
+
+    <!--Contains links to other pages-->
+    <div id="links">
+        <!--Goes to login page-->
+        <a href="../loginPage/login_page.html" target="_blank">Login</a>
+        <!--Goes to food page-->
+        <a href="../foodPage/food_page.html" target="_blank">Explore</a>
+    </div>
+</body>
+</html>

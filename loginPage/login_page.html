@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <div class="centerText">
+        <!--Displays the company name-->
+        <h1>Company Name</h1>
+    </div>
+    
+    <div>
+        <!--Separates the title from the contents of the page-->
+        <hr class="divider" id="Title_separator">
+    </div>
+        
+    <!--Holds the login contents-->
+    <div id="container">
+        <!--Displays that this is where the user will sign in-->
+        <h4 class="signIn" id="signInHeading">Sign In</h4>
+        <div class="signIn" id="labels">
+            <!--Informs the user to enter their email-->
+            <label><strong>Email:</strong></label>
+            <!--Informs the user to enter their password-->
+            <label><strong>Password:</strong></label>
+        </div>
+        
+        <div class="signIn" id="inputs">
+            <!--This is where the user inputs their email-->
+            <input type="email" placeholder="something@gmail.com" id="inputUserName"/>
+            <!--This is where the user inputs their password-->
+            <input type="password" id="inputPassword"/>
+        </div>
+        
+        <div id="submit_btn">
+            <!--The user clicks this button to sign in-->
+            <button onclick="login()">login</button>
+        </div>
+        
+        <div id="welcome">
+            <br>
+            <h2>Welcome: </h2>
+            <h4 id="userNameDisplay">User name</h4>
+        </div>
+    </div>
+    <div>
+        <!--Separates the main content from the links-->
+        <hr class="divider" id="bottom_separator">
+    </div>
+
+    <div id="links">
+        <!--Sends the user to the food page-->
+        <a href="../foodPage/food_page.html" target="_blank">Explore</a>
+        <!--Sends the user to the about page-->
+        <a href="../aboutPage/about_page.html" target="_blank">About</a>
+    </div>
+
+    <script src="login_script.js"></script>
+</body>
+</html>

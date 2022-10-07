@@ -1,0 +1,184 @@
+/*The body of the page*/
+body{
+    /*Makes the background color of the body this type of blue*/
+    background-color: rgb(147, 188, 223);
+}
+
+/*Centers the text of the members of this class*/
+.centerText{
+    text-align: center;
+}
+
+/*Menu of the website*/
+table, th, td {
+    /*Give the table a border*/
+    border: 1px solid black;
+    /*Makes the font bigger*/
+    font-size:x-large;
+}
+
+/*The table itself*/
+table{
+    /*Makes the links clickable even if they're stacked on top of other elements*/
+    z-index: 1;
+    /*Makes it so that the table can be viewed everywhere on the page*/
+    position:fixed;
+    /*Moves the menu off the side of the screen*/
+    left: 10%;
+}
+
+/*Contents of table*/
+th{
+    /*makes the menu bigger*/
+    padding:20px;
+}
+
+/*Div containing pictures and descriptions of items for sale*/
+#container{
+    /*Organizes the elements within the grid*/
+    display: grid;
+    position:absolute;
+    /*Spaces out the elements in the grid*/
+    gap: 20px;
+    left:30%;
+    width:1000px;
+    height:1000px;
+}
+
+/*Add to cart button*/
+.addToCartbtn{
+    /*moves the button in line with the description list*/
+    margin-left: 10%;
+    /*Rounds edges of the button*/
+    border-radius: 50px;
+    /*Makes the button yellow*/
+    background-color:rgb(225, 228, 63);
+    /*Makes the font more visible*/
+    font-size: medium;
+}
+
+/*Picture of item*/
+#food_item1_pic{
+    height:400px;
+    width:450px;
+    /*Keeps the picture within the div*/
+    display:inline-flex;
+    /*Places the picture in the grid*/
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/*Description of item*/
+#food_item1_desc{
+    height:auto;
+    width:300px;
+    /*Makes font size large*/
+    font-size: large;
+    /*Adds border to the item info*/
+    border:2px solid black;
+    /*Places the picture in the grid*/
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/*Picture of item*/
+#food_item2_pic{
+    height:400px;
+    width:450px;
+    /*Keeps the picture within the div*/
+    display:inline-flex;
+    /*Places the picture in the grid*/
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+/*Description of item*/
+#food_item2_desc{
+    height:auto;
+    width:300px;
+    /*Makes font size large*/
+    font-size: large;
+    /*Adds border to the item info*/
+    border:2px solid black;
+    /*Places the picture in the grid*/
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+/*Picture of item*/
+#food_item3_pic{
+    height:400px;
+    width:450px;
+    /*Keeps the picture within the div*/
+    display:inline-flex;
+    /*Places the picture in the grid*/
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/*Description of item*/
+#food_item3_desc{
+    height:auto;
+    width:300px;
+    /*Makes font size large*/
+    font-size: large;
+    /*Adds border to the item info*/
+    border:2px solid black;
+    /*Places the picture in the grid*/
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/*text of item description*/
+#text_of_item3_desc{
+    /*Puts the text in line with the other description lists*/
+    margin-left: 30px;
+}
+
+/*Div at the bottom of the page*/
+#bottom_of_page{
+    /*Moves contents of this div to the bottom of the page to make the height of the page larger*/
+    position:absolute;
+    top:1400px;
+    /*Moves link to center of the page*/
+    margin-left: 48%;
+}
+
+/*Anchor that goes to top of the page*/
+#toTopOfPage{
+    width:100px;
+    height:50px;
+}
+
+/*Div that adds more space to the page*/
+#more_space_to_bottom{
+    position:absolute;
+}
+
+a:link{
+    color:blue;
+}
+/*Changes the color when the mouse hovers over the link*/
+a:hover{
+    color:green;
+}
+/*Changes the color when the mouse clicks on the link*/
+a:active{
+    color:orange;
+}
+/*Changes the color after being focused on*/
+a:focus{
+    color: purple;
+}

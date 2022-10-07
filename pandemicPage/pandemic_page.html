@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandemic</title>
+    <link rel="stylesheet" href="pandemic_style.css">
+</head>
+<body>
+    <!--pointer to the top of the page-->
+    <div><a id="topOfPage"></a></div>
+    <div>
+        <!--Displays the company name-->
+        <h1 class="centerText">Company Name</h1>
+    </div>
+    <div>
+        <!--Displays the topic of the page-->
+        <h2 class="centerText">Pandemic</h2>
+    </div>
+    <!--Contains links to the other pages-->
+    <div id="menu">
+        <table id="menu_table">
+            <tr>
+                <!--Goes to login page-->
+                <th><a href="../loginPage/login_page.html" target="_blank">Login</a></th>
+            </tr>
+            <tr>
+                <!--Goes to food items page-->
+                <th><a href="../foodPage/food_page.html" target="_blank">Food</a></th>
+            </tr>
+            <tr>
+                <!--Goes to school items page-->
+                <th><a href="../schoolPage/school_page.html" target="_blank">School</a></th>
+            </tr>
+            <tr>
+                <!--Goes to about page-->
+                <th><a href="../aboutPage/about_page.html" target="_blank">About</a></th>
+            </tr>
+            <tr>
+                <!--Keeps track of total price-->
+                <th><p id="totalPrice">Total price: </p></th>
+            </tr>
+        </table>
+
+    </div>
+    <div id="container">
+        <!--displays picture of the item-->
+        <div id="food_item1_pic">
+            <img src="../pictures/masks.jpeg" alt="Masks">
+        </div>
+        
+        <!--Displays information about the item-->
+        <div id="food_item1_desc">
+            <ul>
+                <!--Displays what the item is-->
+                <li><strong>Item name:</strong> Masks (75 pcs)</li>
+                <!--Displays the price of the item-->
+                <li><strong>Price:</strong> $20.00</li>
+                <!--Displays the company name of the item-->
+                <li><strong>Company name:</strong> FLTR</li>
+                <!--Displays the rating of the item-->
+                <li><strong>Rating:</strong> 9.5/10</li>
+            </ul>
+            <br>
+            <label>Quantity: </label>
+            <!--Input for item quantity-->
+            <input id="item1Quantity" type="number" min="0" max="100">
+            <br>
+            <br>
+            <!--Makes a button that adds items to cart-->
+            <button class="addToCartbtn" onclick="updateCart(20,1,3)">Update cart</button>
+            <br>
+            <!--Displays item quantity-->
+            <h4 id="displayItem1Quantity">Current Quantity:</h4>
+        </div>
+
+        <!--displays picture of the item-->
+        <div id="food_item2_pic">
+            <img src="../pictures/purell.jpeg" alt="Purell">
+        </div>
+        
+        <!--Displays information about the item-->
+        <div id="food_item2_desc">
+            <ol>
+                <!--Displays what the item is-->
+                <li><strong>Item name:</strong> Purell</li>
+                <!--Displays the price of the item-->
+                <li><strong>Price:</strong> $1.00</li>
+                <!--Displays the company name of the item-->
+                <li><strong>Company name:</strong> GOJO Industry</li>
+                <!--Displays the rating of the item-->
+                <li><strong>Rating:</strong> 9.7/10</li>
+            </ol>
+            <br>
+            <label>Quantity: </label>
+            <!--Input for item quantity-->
+            <input id="item2Quantity" type="number" min="0" max="100">
+            <br>
+            <br>
+            <!--Makes a button that adds items to cart-->
+            <button class="addToCartbtn" onclick="updateCart(20,1,3)">update cart</button>
+            <br>
+            <!--Displays item quantity-->
+            <h4 id="displayItem2Quantity">Current Quantity:</h4>
+        </div>
+        
+        <!--displays picture of the item-->
+        <div id="food_item3_pic">
+            <img src="../pictures/tissues.jpeg" alt="Tissues">
+        </div>
+
+        <!--Displays information about the item-->
+        <div id="food_item3_desc">
+            <dl id="text_of_item3_desc">
+                <!--Displays what the item is-->
+                <dt><strong>Item name:</strong></dt>
+                <dd>Tissues</dd>
+                <!--Displays the price of the item-->
+                <dt><strong>Price:</strong></dt>
+                <dd>$3.00</dd>
+                <!--Displays the company name of the item-->
+                <dt><strong>Company name:</strong></dt>
+                <dd>Kleenex</dd>
+                <!--Displays the rating of the item-->
+                <dt><strong>Rating:</strong></dt>
+                <dd>9.1/10</dd>
+            </dl>
+            <br>
+            <label>Quantity: </label>
+            <!--Input for item quantity-->
+            <input id="item3Quantity" type="number" min="0" max="100">
+            <br>
+            <br>
+            <!--Makes a button that adds items to cart-->
+            <button class="addToCartbtn" onclick="updateCart(20,1,3)">Update cart</button>
+            <br>
+            <!--Displays item quantity-->
+            <h4 id="displayItem3Quantity">Current Quantity:</h4>
+        </div>
+    </div>
+
+    <div id="bottom_of_page">
+        <!--Clicking this link sends user to the top of the page-->
+        <h4 id="toTopOfPage"><a href="#topOfPage">To top</a></h4>
+    </div>
+    <!--Moves the bottom of the page down so that the last item can be viewed better-->
+    <div id="more_space_to_bottom"></div>
+    
+    <script src="../bodyPage_script.js"></script>
+</body>
+</html>

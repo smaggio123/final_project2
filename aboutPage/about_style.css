@@ -1,0 +1,79 @@
+/*The body of the page*/
+body{
+    /*Makes the background color of the page this color*/
+    background-color: rgb(147, 188, 223);
+}
+
+/*Centers the text of the elements in this class*/
+.centerText{
+    text-align: center;
+}
+
+/*The description of the company*/
+#description{
+    width:50%;
+    height:auto;
+    /*Moves the description more towards the center of the page*/
+    margin-left:25%;
+    /*Displays box surrounding text. Green color used to contrast blue background*/
+    border:3px solid green;
+    /*Makes it easier to read the text*/
+    font-size: large;
+}
+
+/*User input about the user's experience on the website*/
+#userInput{
+    /*Moves the div closer to the center of the page*/
+    margin-left: 48%;
+    width:5%;
+}
+
+/*Embeded pdf containing the terms of services*/
+#pdfTermsOfServices{
+    width:800px;
+    height:800px;
+    /*Gives the pdf separation from other elements in the page*/
+    margin-top: 100px;
+    /*Moves the pdf closer to the center of the page*/
+    margin-left: 25%;
+}
+
+/*Link to email*/
+#emailLink{
+    /*Moves link closer to the center of the page*/
+    margin-left: 48%;
+}
+
+/*Divider at bottom of page*/
+#bottom_separator{
+    /*Displays separator between contents of page and the links*/
+    border-bottom: 2px solid black;
+    /*Increases separation between the line and elements above it*/
+    margin-top: 15%;
+}
+
+/*Div containing links to other pages*/
+#links{
+    height:50px;
+    width:50px;
+    /*Moves links closer to the center of the page*/
+    margin-left:48%;
+    /*Manually placing the links on the page*/
+    top:80%;
+}
+
+a:link{
+    color:blue;
+}
+/*Changes the color when the mouse hovers over the link*/
+a:hover{
+    color:green;
+}
+/*Changes the color when the mouse clicks on the link*/
+a:active{
+    color:orange;
+}
+/*Changes the color after being focused on*/
+a:focus{
+    color: purple;
+}
